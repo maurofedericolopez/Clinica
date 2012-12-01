@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="ClinicaPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>Modelo.Paciente</class>
+    <class>Modelo.Doctor</class>
+    <class>Modelo.Edificio</class>
+    <class>Modelo.Piso</class>
+    <class>Modelo.Droga</class>
+    <class>Modelo.Servicio</class>
+    <class>Modelo.Visita</class>
+    <class>Modelo.Propietario</class>
+    <class>Modelo.Dotacion</class>
+    <class>Modelo.Consultorio</class>
+    <class>Modelo.Habitacion</class>
+    <class>Modelo.Enfermera</class>
+    <class>Modelo.JefeEnfermera</class>
+    <class>Modelo.Auxiliar</class>
+    <class>Modelo.PacienteHabitacion</class>
+    <class>Modelo.TipoServicio</class>
+    <class>Modelo.HabitacionPaciente</class>
+    <class>Modelo.DrogaServicio</class>
+    <class>Modelo.DrogaVisita</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/clinica"/>
+      <property name="javax.persistence.jdbc.password" value="admin"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="admin"/>
+    </properties>
+  </persistence-unit>
+</persistence>
